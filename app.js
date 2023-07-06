@@ -9,14 +9,14 @@ function preload() {
 
 function setup() {
   noCanvas();
-  gloria.loadPixels();
-  for (let j = 0; j < gloria.height; j++) {
+  img.loadPixels();
+  for (let j = 0; j < img.height; j++) {
     let row = "";
-    for (let i = 0; i < gloria.width; i++) {
-      const pixelIndex = (i + j * gloria.width) * 4;
-      const r = gloria.pixels[pixelIndex + 0];
-      const g = gloria.pixels[pixelIndex + 1];
-      const b = gloria.pixels[pixelIndex + 2];
+    for (let i = 0; i < img.width; i++) {
+      const pixelIndex = (i + j * img.width) * 4;
+      const r = img.pixels[pixelIndex + 0];
+      const g = img.pixels[pixelIndex + 1];
+      const b = img.pixels[pixelIndex + 2];
 
       const avg = (r + g + b) / 3;
 
