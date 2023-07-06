@@ -13,8 +13,31 @@
          <div class="logo"><img src="New folder/OIG (2).jpeg" alt="logo" srcset=""></div>
          <div class="video-btn">Check live Video</div>
     </div>
+    <div class="area">
+        <div class="right">
+            <div class="form">
+                <div>Image to pe processed:<br>
+                <input type="file" name="img" id="imageInput"></div>
+                
+                <div class="extra">
+                    
+                    <div>Pixels:
+                    <input type="text" name="pix" id="pixels" placeholder="60-230"></div>
 
-    <img src="IMG20220809154015.jpg" id="image" srcset="">
+                    <div>Height:
+                        <input type="text" name="hgt" id="width" placeholder="450-600"></div>
+                   
+                    <div>Width:
+                        <input type="text" name="wdh" id="height" placeholder="450-600"></div>
+        
+
+                </div>
+
+                <button onclick="resizeImage()">Resize Image</button>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
 
     <script src="app.js"></script>
     
