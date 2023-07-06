@@ -45,3 +45,7 @@ body{
     height: 88vh;
     background-color: black;
 }
+#image{
+    height: 500px;
+    width: 500px;
+}

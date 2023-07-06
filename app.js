@@ -1,4 +1,5 @@
 
+/*
 let density = "Ñ@#W$9876543210?!abc;:+=-,._ ";
 
 let img;
@@ -30,3 +31,26 @@ function setup() {
     createDiv(row);
   }
 }
+*/
+
+let img = document.getElementById("image")
+
+function resize() {
+  
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+  
+    var width = 48;
+    var height = 48;
+    canvas.width = width;
+    canvas.height = height;
+  
+    ctx.drawImage(img, 0, 0, width, height);
+  
+    var resizedImage = canvas.toDataURL('image/jpeg');
+     
+    console.log("hello World!!")
+    console.log(resizedImage);
+  };
+  
+  resize();
