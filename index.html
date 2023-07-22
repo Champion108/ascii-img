@@ -13,16 +13,17 @@
 
 <body>
 <div class="cont">
-    <div class="nav">Live Video Stream</div>
-    <div id="hr"></div>
-    <div>
-        <video id="video">Video stream not available.</video>
-    </div>
+    <video id="video">Video stream not available.</video>
     <div class="fl">
-    <div id="text-video"></div>
-    <canvas id="canvas-video"></canvas>
-  </div>
-    <div id="stop">Stop</div>
+        <div id="text-video"></div>
+        <div class="controls">
+            <div class="btn">
+            <div id="stop">Stop</div>
+            <a href="#" id="return">Return</a>
+            </div>
+            <canvas id="canvas-video"></canvas>
+        </div>
+    </div>
 </div>
 </body>
 <script src="app.js"></script>

@@ -6,6 +6,7 @@
     const width = 320 / 2, height = 240 / 2;
 
     const gradient = "_______.:!/r(l1Z4H9W8$@";
+    const density= "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,^`'.";
     const preparedGradient = gradient.replaceAll('_', '\u00A0')
     
 
