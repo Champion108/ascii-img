@@ -1,44 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--Namah Shivaya  Namo Narayana Jai Jagganath-->
+<!doctype html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ascii Art generator</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
+
 <body>
-
-    <div class="nav">
-         <div class="logo"><img src="New folder/OIG (2).jpeg" alt="logo" srcset=""></div>
-         <div class="video-btn">Check live Video</div>
+<div class="cont">
+    <div class="nav">Live Video Stream</div>
+    <div id="hr"></div>
+    <div>
+        <video id="video">Video stream not available.</video>
     </div>
-    <div class="area">
-        <div class="right">
-            <div class="form">
-                <div>Image to pe processed:<br>
-                <input type="file" name="img" id="imageInput"></div>
-                
-                <div class="extra">
-                    
-                    <div>Pixels:
-                    <input type="text" name="pix" id="pixels" placeholder="60-230"></div>
-
-                    <div>Height:
-                        <input type="text" name="hgt" id="width" placeholder="450-600"></div>
-                   
-                    <div>Width:
-                        <input type="text" name="wdh" id="height" placeholder="450-600"></div>
-        
-
-                </div>
-
-                <button onclick="resizeImage()">Resize Image</button>
-            </div>
-        </div>
-        <canvas id="canvas"></canvas>
-    </div>
-    <script src="app.js"></script>
-    
+    <div class="fl">
+    <div id="text-video"></div>
+    <canvas id="canvas-video"></canvas>
+  </div>
+    <div id="stop">Stop</div>
+</div>
 </body>
+<script src="app.js"></script>
 </html>
